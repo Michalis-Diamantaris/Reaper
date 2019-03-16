@@ -53,6 +53,7 @@ print encoded.replace("UIHarvester","").decode('base64')
 Both tools output a lot of information to the logcat. It is wise to change the logcat buffer to a bigger value.
 
 Paper
+
 For technical details and evaluation results, please refer to our publication:
 REAPER: Real-time App Analysis for Augmenting the Android Permission System
 http://www.reaper.gr/data/codas049-diamantarisA.pdf
