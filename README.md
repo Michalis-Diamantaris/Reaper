@@ -1,19 +1,19 @@
-Reaper is a dynamic analysis system that traces the permissions requested by apps in real time and distinguishes those requested by the app's core functionality from those requested by third-party libraries linked with the app.
+**Reaper** is a dynamic analysis system that traces the permissions requested by apps in real time and distinguishes those requested by the app's core functionality from those requested by third-party libraries linked with the app.
 
 The core functionality of Reaper consists of two Xposed modules:
 
-reaper.PermissionHarvester
+**reaper.PermissionHarvester**
 
-reaper.UIHarvester
+**reaper.UIHarvester**
 
 The modules provided in this repo are slightly modified from the ones used in the original experiments in order to be more user friendly.
 Moreover, elements captured by UIHarvester contain more features such as "Text size", "color", "Resource Id", "Tag", etc. 
 
-Prerequisites: Xposed Framework
+**Prerequisites:** Xposed Framework
 
-How to install:
+**How to install:**
 
-reaper.PermissionHarvester
+*reaper.PermissionHarvester*
 
 Download the module,compile and build the apk.
 
@@ -30,7 +30,7 @@ Download the module,compile and build the apk.
 6)Reboot 
 
 
-reaper.UIHarvester
+*reaper.UIHarvester*
 
 Download the module,compile and build the apk.
 
@@ -49,7 +49,7 @@ Download the module,compile and build the apk.
 These steps are necessary because of the SELinux policy and in order to activate the shared preferences used in both modules.
 
 
-Logcat Output
+**Logcat Output**
 
 Both modules output all the information to logcat. 
 
@@ -67,7 +67,7 @@ print encoded.replace("UIHarvester","").decode('base64')
 
 Both tools output a lot of information to the logcat. It is wise to change the logcat buffer to a bigger value.
 
-Paper
+**Paper**
 
 For technical details and evaluation results, please refer to our publication:
 
@@ -76,4 +76,4 @@ REAPER: Real-time App Analysis for Augmenting the Android Permission System
 http://www.reaper.gr/data/codas049-diamantarisA.pdf
 
 
-Designed by Michalis Diamantaris and Jason Polakis, implemented by Michalis Diamantaris.
+*Designed by Michalis Diamantaris and Jason Polakis, implemented by Michalis Diamantaris.*
