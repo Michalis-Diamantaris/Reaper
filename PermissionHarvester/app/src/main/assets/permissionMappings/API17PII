@@ -1,0 +1,8 @@
+android.net.NetworkInfo getExtraInfo
+android.net.wifi.WifiInfo getMacAddress
+android.telephony.TelephonyManager getNetworkCountryIso
+android.telephony.TelephonyManager getNetworkOperator
+android.telephony.TelephonyManager getNetworkOperatorName
+android.os.Build getRadioVersion
+java.util.TimeZone getID
+android.app.ApplicationPackageManager getInstalledPackages

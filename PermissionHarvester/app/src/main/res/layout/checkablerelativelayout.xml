@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reaper.PermissionHarvester.CheckableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/checkedTextViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5sp"
+        android:textColor="#000000"
+        />
+
+</reaper.PermissionHarvester.CheckableRelativeLayout>
