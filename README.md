@@ -1,7 +1,9 @@
 Reaper is a dynamic analysis system that traces the permissions requested by apps in real time and distinguishes those requested by the app's core functionality from those requested by third-party libraries linked with the app.
 
 The core functionality of Reaper consists of two Xposed modules:
+
 reaper.PermissionHarvester
+
 reaper.UIHarvester
 
 The modules provided in this repo are slightly modified from the ones used in the original experiments in order to be more user friendly.
@@ -14,22 +16,34 @@ How to install:
 reaper.PermissionHarvester
 
 Download the module,compile and build the apk.
+
 1)install the module (do not activate yet and do not reboot)
+
 2)adb shell su chmod 711 /data/data/reaper.PermissionHarvester
+
 3)Open the PermissionHarvester app activity 
+
 4)adb shell su chmod 664 /data/data/reaper.PermissionHarvester/shared_prefs/PermissionHarvesterPrefs.xml
+
 5)Activate the module
+
 6)Reboot 
 
 
 reaper.UIHarvester
 
 Download the module,compile and build the apk.
+
 1)Install the module (do not activate yet and do not reboot)
+
 2)adb shell su chmod 711 /data/data/reaper.UIHarvester
+
 3)Open the UIHarvester app activity 
+
 4)adb shell su chmod 664 /data/data/reaper.UIHarvester/shared_prefs/UIHarvesterPrefs.xml
+
 5)Activate the module
+
 6)Reboot 
 
 These steps are necessary because of the SELinux policy and in order to activate the shared preferences used in both modules.
@@ -38,6 +52,7 @@ These steps are necessary because of the SELinux policy and in order to activate
 Logcat Output
 
 Both modules output all the information to logcat. 
+
 For easiest parsing of the results in UIHarvester the information for every element can also be exported to logcat in an encoded base64 form. 
 
 Example:
@@ -55,7 +70,9 @@ Both tools output a lot of information to the logcat. It is wise to change the l
 Paper
 
 For technical details and evaluation results, please refer to our publication:
+
 REAPER: Real-time App Analysis for Augmenting the Android Permission System
+
 http://www.reaper.gr/data/codas049-diamantarisA.pdf
 
 
