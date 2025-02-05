@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reaper</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+
+  <div class="banner-area container-fluid">
+    <div class="banner-contents container">
+
+      <div class="extraSMcol col-xs-3 col-sm-2 col-md-2 col-lg-2">
+        <div class="project-logo">
+          <img src="img/androidreaper-logo.png">
+        </div>
+      </div>
+
+      <div class="extraSMcol col-xs-9 col-sm-10 col-md-10 col-lg-10">
+        <div class="project-title">
+          <h1><span>REAPER</span>: <span><b>Rea</b></span>l-time <span><b>Per</b></span>mission Analysis</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="paper-info-area container-fluid">
+    <div class="paper-info container">
+      <h2>Publication</h2>
+      <h2><span>REAPER:</span> Real-time App Analysis for Augmenting the Android Permission System</h2>
+      <p><em>Michalis Diamantaris, Elias P. Papadopoulos, Evangelos P. Markatos, Sotiris Ioannidis and Jason Polakis.</em></p>
+      <p>In Proceedings of 9th ACM Conference on Data and Application Security and Privacy (CODASPY '19), March 2019. 
+      <a href="data/codas049-diamantarisA.pdf">[Paper]</a>
+      <a href="data/paper.bib">[BibTex]</a></p>
+      <h2>Abstract</h2>
+      <div class="text-section">
+        <p class="forced-paragraph">Android's app ecosystem relies heavily on third-party libraries as they facilitate code development and provide a steady stream of revenue for developers. However, while Android has moved towards a more fine-grained run time permission system, users currently lack the required resources for deciding whether a specific permission request is actually intended for the app itself or is requested by possibly dangerous third-party libraries.</p>
+        <p class="forced-paragraph">In this paper we present Reaper, a novel dynamic analysis system that traces the permissions requested by apps in real time and distinguishes those requested by the app's core functionality from those requested by third-party libraries linked with the app. We implement a sophisticated UI automator and conduct an extensive evaluation of our system's performance and find that Reaper introduces negligible overhead, rendering it suitable both for end users (by integrating it in the OS) and for deployment as part of an official app vetting process. Our study on over 5K popular apps demonstrates the large extent to which personally identifiable information is being accessed by libraries and highlights the privacy risks that users face. We find that an impressive 65% of the permissions requested do not originate from the core app but are issued by linked third-party libraries, 37.3% of which are used for functionality related to ads, tracking, and analytics. Overall, Reaper enhances the functionality of Android's run time permission model without requiring OS or app modifications, and provides the necessary contextual information that can enable users to selectively deny permissions that are not part of an app's core functionality.</p>
+      </div>
+
+      <h2>BibTex</h2>
+      <pre style="border: 1px solid; border-style: dotted; background-color: #f2f2f2; line-height: 20px">
+@inproceedings{Diamantaris:2019:RRA:3292006.3300027,
+   author = {Diamantaris, Michalis and Papadopoulos, Elias P. and Markatos, Evangelos P. and Ioannidis, Sotiris and Polakis, Jason},
+   title = {REAPER: Real-time App Analysis for Augmenting the Android Permission System},
+   booktitle = {Proceedings of the Ninth ACM Conference on Data and Application Security and Privacy},
+   series = {CODASPY '19},
+   year = {2019},
+   isbn = {978-1-4503-6099-9},
+   pages = {37--48},
+   url = {http://doi.acm.org/10.1145/3292006.3300027},
+   doi = {10.1145/3292006.3300027},
+   acmid = {3300027},
+   publisher = {ACM},
+   keywords = {android, dynamic analysis, permission origin, personally identifiable information, third-party libraries},
+ }</pre>
+      <h2>Tools</h2>
+      <p>We made our source code available <a href="https://github.com/Michalis-Diamantaris/Reaper">here</a>.</p>
+      <h2>Datasets</h2>
+      <p>Apps (md5, package name) used in our analysis can be found <a href="https://pastebin.com/3A5fhwk4">here</a>.</p>
+      <p>Apps (md5, package name) used in evaluating the performance of UIHarvester can be found <a href="https://pastebin.com/td7iA7jx">here</a>.</p>
+      <p>Apps (md5, package name) used in evaluating the coverage of UIHarvester can be found <a href="https://pastebin.com/HRgHv1UE">here</a>.</p>
+      <br>
+      If you conduct research related to our work and you would like the data from our study on over 5K apps, please contact us.
+      <h2>Contact</h2>
+      <p>In case you have questions about this project, contact <a href="mailto:diamant@ics.forth.gr?subject=Reaper-Comments">Michalis Diamantaris</a>.</p>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
